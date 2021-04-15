@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>LocalStorage and Session Storage</h2>
+    <script>
+      //localStorage
+      let name = "John";
+
+      // localStorage.setItem("name", name);
+
+      // sessionStorage.setItem("name", "Duregsh");
+
+      // key:String
+      // value:string
+
+      let marks = [24, 35, 636, 647, 57, 75, 6];
+
+      localStorage.setItem("marks", marks);
+
+      let student = {
+        phone: 325235,
+        address: "delhi",
+      };
+
+      localStorage.setItem("student", JSON.stringify(student));
+    </script>
+  </body>
+</html>

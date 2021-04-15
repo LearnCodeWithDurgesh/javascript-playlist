@@ -1,0 +1,49 @@
+<html>
+  <body>
+    <div id="main">
+      <!-- before -->
+      <h1 id="title">Hello World!</h1>
+      <p id="hint">This is a simple paragraph.</p>
+
+      <!-- //divElement  -->
+    </div>
+
+    <button onclick="addNode()">Add Node</button>
+
+    <script>
+      //adding node function
+
+      function addNode() {
+        console.log("adding node");
+        //creating node
+        let divElement = document.createElement("div");
+        // console.log(divElement);
+
+        //create a textnode
+        let textElement = document.createTextNode("wow this is magic !!");
+        let textElement1 = document.createTextNode(
+          "this is very helpful tutorial !!"
+        );
+
+        //adding itext node to divElement
+        divElement.appendChild(textElement);
+        divElement.appendChild(textElement1);
+
+        console.log(divElement);
+
+        let mainElement = document.getElementById("main");
+
+        let titleElement = document.getElementById("title");
+        // mainElement.insertBefore(divElement, titleElement);
+
+        mainElement.appendChild(divElement);
+
+        titleElement.innerHTML = "hey there";
+
+        mainElement.removeChild(titleElement);
+
+        //replace child work...
+      }
+    </script>
+  </body>
+</html>

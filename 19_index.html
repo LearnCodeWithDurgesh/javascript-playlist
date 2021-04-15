@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>For in loop</h1>
+
+    <script>
+      //example of for in loop
+      //   console.log("for in example");
+
+      let st1 = {
+        name: "John",
+        phone: 9839,
+        address: "Lko",
+      };
+
+      //   for (let k in st1) {
+      //     console.log(`${k}=> ${st1[k]} `);
+      //   }
+
+      //   let ar = ["ABC", "XYZ", "LMN"];
+
+      //   for (var i in ar) {
+      //     console.log(ar[i]);
+      //   }
+
+      let ar = ["ABC", "XYZ", "LMN"];
+
+      console.log(ar);
+
+      for (let item of ar) {
+        console.log(item);
+      }
+
+      for (let item in ar) {
+        console.log(ar[item]);
+      }
+    </script>
+  </body>
+</html>

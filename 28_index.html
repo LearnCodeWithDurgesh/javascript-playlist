@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Timers</title>
+  </head>
+  <body>
+    <h1>Javascript Timers</h1>
+
+    <button onclick="start()">Start</button>
+
+    <button onclick="stop()">Stop</button>
+
+    <script>
+      //setTimeout()- execute code after a delay
+
+      //setInterval()- execute code at regular intervals
+
+      //we have to write our code that we want to execute after 5 seconds:USE CASE
+      function myCode() {
+        console.log("hey...i am  rocky..");
+        console.log("how are you??");
+      }
+
+      let timer;
+      function start() {
+        //we have start...
+        // setTimeout(myCode, 5000);
+        //setTimeout(function,delay in m)
+
+        timer = setInterval(myCode, 2000);
+        console.log(timer);
+      }
+
+      function stop() {
+        clearInterval(timer);
+      }
+    </script>
+  </body>
+</html>

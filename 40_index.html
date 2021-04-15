@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events and Event Handling</title>
+  </head>
+  <body>
+    <form onsubmit="form_submit(event)" action="test.html">
+      <button type="submit">Submit</button>
+    </form>
+
+    <br />
+    <button onclick="my_fun()">Click me</button>
+
+    <button id="go_live_btn">Go Live</button>
+
+    <input
+      type="text"
+      onfocus="change_color()"
+      onkeyup="update_text()"
+      id="field"
+    />
+
+    <h1 id="heading">This is dummy text</h1>
+
+    <script>
+      const form_submit = (e) => {
+        console.log(e);
+        e.preventDefault();
+      };
+
+      const my_fun = () => {
+        alert("this code is from function..");
+      };
+
+      const change_color = () => {
+        document.getElementById("field").style.backgroundColor = "#e2e2e2";
+      };
+
+      const update_text = () => {
+        let data = document.getElementById("field").value;
+        document.getElementById("heading").innerHTML = data;
+      };
+
+      let go_live_btn_ob = document.getElementById("go_live_btn");
+
+      //addEventListener()
+
+      go_live_btn_ob.addEventListener("click", () => {
+        alert("you are live now");
+      });
+
+      go_live_btn_ob.addEventListener("click", () => {
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+      });
+
+      go_live_btn_ob.addEventListener("mouseover", () => {
+        go_live_btn_ob.style.backgroundColor = "red";
+      });
+    </script>
+  </body>
+</html>

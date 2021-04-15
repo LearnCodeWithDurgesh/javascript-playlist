@@ -1,0 +1,10 @@
+1. How to check equality of two string
+
+2. comparing two string
+
+3.Replace certiain word with another
+
+4.accessing character -string[0]
+    charAt(index)
+
+5.converting string to array using split function

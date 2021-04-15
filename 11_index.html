@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Five Important string operations</title>
+  </head>
+  <body>
+    <h1>5 Important String operations</h1>
+    <script>
+      //1. How to check equality of two string
+      //==,===
+      //Literal
+      let str1 = "Javascript";
+      let str2 = "Javascript";
+      console.log(str1);
+      console.log(str2);
+      console.log(str1 == str2);
+      if (str1 == str2) {
+        console.log("both string are equals wow");
+      }
+
+      //ex. creating string in another way
+      let str3 = new String("Javascript");
+      let str4 = new String("Javascript");
+      console.log(str3);
+      console.log(str4);
+      console.log(str3 == str4);
+
+      //2.comparing two string
+      let s1 = "C";
+      let s2 = "B";
+      //.localeCompare
+      let result = s1.localeCompare(s2);
+      //exact matching: 0
+      //s1<s2 : -1
+
+      //s1>s2 : +1
+
+      //65 < 66;
+      //67 >66
+      console.log(result);
+      //A-65 Z-90
+      //a-98 z=122
+      //0-48
+      //console.log(s2.charCodeAt(0));
+
+      //   3.Replace certiain word with another
+      let oldString = "I hate javascript";
+      let newString = oldString.replace("hate", "love");
+      console.log(newString);
+      console.log(oldString);
+
+      //  4.accessing character -string[0]
+      // charAt(index)
+      console.log(oldString.charAt(0));
+      console.log(oldString[2]);
+
+      // 5.converting string to array using split function
+      let as = oldString.split(" ");
+      console.log(as);
+      let chara = oldString.split("");
+      console.log(chara);
+    </script>
+  </body>
+</html>

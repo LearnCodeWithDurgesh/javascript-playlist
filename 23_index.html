@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM styling</title>
+
+    <style>
+      .red {
+        background-color: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="changeStyle()">Change Style</button>
+
+    <button onclick="getStyle()">Get Information</button>
+
+    <h2 id="main">LearnCodeWith Durgesh</h2>
+    <h2 id="sub">YouTube Channel</h2>
+    <h2 id="subsub">For programming videos subscribe</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nemo
+      cumque minus totam esse facere veniam dolorem saepe dolore fuga
+      consectetur alias voluptatum illo nesciunt, explicabo quidem illum,
+      incidunt nostrum atque rem. Tempora ut perferendis debitis corrupti vero.
+      Quam iure odio dolorum temporibus velit debitis non. Consequuntur atque
+      suscipit nemo placeat assumenda blanditiis ab maiores id voluptas
+      voluptatibus, alias magni quisquam laborum eos adipisci ullam odit
+      aspernatur libero eveniet qui? Veritatis esse eaque similique qui, neque
+      quidem quis sed voluptatibus molestiae at maiores voluptatem dicta iusto,
+      dolores officia velit, soluta ratione doloribus molestias non eius sunt
+      harum quasi quia. Sed consequuntur enim, culpa alias odit velit aliquid ut
+      dignissimos vitae aut rerum reiciendis aperiam molestiae ipsam repellendus
+      cum consequatur excepturi omnis animi nostrum reprehenderit mollitia
+      quaerat ab libero. Debitis non expedita, fugit labore consectetur iure
+      accusantium maiores. Ea, veniam fuga dolore quo praesentium at facilis
+      atque sapiente explicabo. Porro at facilis maxime eaque sit ex dolore ea
+      libero quas minima est neque, cupiditate reprehenderit. Fugiat recusandae
+      nemo rerum quis, accusamus quibusdam maxime omnis quidem. Itaque suscipit
+      odio placeat nobis, magni architecto impedit sunt exercitationem dolorum?
+      Temporibus et, minus laborum rem repudiandae magni obcaecati. Id velit
+      debitis nisi? Delectus autem eaque expedita placeat repudiandae, vitae,
+      exercitationem pariatur animi officiis molestiae suscipit recusandae est
+      optio quibusdam totam laudantium laboriosam minima fugit consectetur
+      temporibus, aspernatur voluptatum veritatis. Inventore neque id ea porro
+      eaque accusamus fugiat sed, velit debitis. Distinctio saepe earum suscipit
+      ullam perspiciatis, facere, similique nemo numquam, mollitia ad sequi
+      cupiditate voluptatibus. Ratione quidem non eos veritatis. Officiis ab
+      nesciunt quidem quo amet repudiandae quaerat sint magni eius, aperiam est
+      eligendi ducimus nihil rem eum deleniti nam impedit, quas reprehenderit
+      sapiente sequi recusandae laudantium repellat inventore? Sit eos
+      voluptatum quaerat nam a vel animi eum deleniti, veniam, earum minus
+      ducimus adipisci sequi nisi ratione! Molestiae, sapiente voluptatem! Totam
+      esse ut suscipit laboriosam, a temporibus quo? Quam ratione rerum
+      voluptatibus, temporibus accusantium sit odit qui quod eum labore
+      excepturi tempore doloribus autem culpa beatae nobis. Consectetur ipsum
+      soluta nulla provident natus, animi ipsam hic voluptates nemo ducimus
+      eveniet molestias voluptate inventore odio numquam perspiciatis eaque
+      sapiente illo exercitationem distinctio! Velit laboriosam porro nemo
+      molestiae voluptatum incidunt veritatis placeat, illo, perspiciatis
+      doloribus ipsam! Repellat totam accusamus omnis? Deleniti numquam mollitia
+      eligendi excepturi voluptates laboriosam laudantium quidem at provident
+      expedita consequatur qui voluptas tenetur doloribus iste, iusto deserunt
+      dignissimos nisi possimus. Vitae assumenda asperiores facere itaque
+      molestias quisquam ex fugit placeat dignissimos suscipit in minus
+      accusantium est quo, culpa at nihil nisi aspernatur? Sequi, at fugiat?
+      Repellendus, veritatis. Dolorem nisi illum nihil a praesentium
+      reprehenderit rem voluptas dicta ea hic, autem, quaerat at fuga modi quo
+      omnis harum! Dolore fugiat rem aspernatur architecto quis eaque, eligendi,
+      iste nisi iusto voluptate dolorum? Sint ratione minima recusandae ducimus
+      non aspernatur rem libero perspiciatis cum, eaque, impedit omnis incidunt
+      possimus dolorum alias, quaerat quis voluptatem aliquam sunt numquam
+      maxime aperiam. Dignissimos quae, possimus quia soluta doloribus alias
+      impedit accusamus. Qui magni sapiente, recusandae enim odit officiis
+      debitis voluptatem?
+    </p>
+
+    <script>
+      //select the element
+      let mainOb = document.getElementById("main");
+
+      //applying style on element
+
+      const changeStyle = () => {
+        mainOb.style.color = "blue";
+        mainOb.style.fontSize = "30px";
+        mainOb.style.border = "1px solid red";
+        mainOb.style.padding = "20px";
+        mainOb.style.background = "#e2e2e2";
+
+        document.body.style.background = "black";
+        document.body.style.color = "white";
+
+        mainOb.className = mainOb.className + "red";
+      };
+
+      const getStyle = () => {
+        // console.log(mainOb.style.color);
+        // console.log(mainOb.style.fontSize);
+        // console.log(mainOb.style.border);
+
+        let styles = window.getComputedStyle(mainOb);
+
+        console.log(styles.getPropertyValue("color"));
+      };
+    </script>
+  </body>
+</html>

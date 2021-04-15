@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array First Video</title>
+  </head>
+  <body>
+    <h1>Javascript Array</h1>
+    <script>
+      //javascript array
+      //how to create array
+      //1.
+      let arr = [12, 56, 11, 8, 90];
+      console.log(arr);
+      console.log(typeof arr);
+
+      //access elements
+      console.log(arr[3]);
+
+      //2. using
+      let names = new Array("Durgesh", "Ravi", "Faisal");
+      console.log(names);
+      console.log(names[1]);
+
+      names.push("Kiran");
+      console.log(names);
+      names.push("Vandana");
+      console.log(names);
+
+      //how to find size of array
+      console.log("Size of names is ", names.length);
+
+      //type is not fixed
+      const myDetails = ["Durgesh", 891452, 70.63, ["ABC", "XYZ"]];
+      console.log(myDetails);
+      console.log(myDetails[3][1]);
+    </script>
+  </body>
+</html>

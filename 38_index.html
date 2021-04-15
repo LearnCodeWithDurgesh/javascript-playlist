@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Object Operations</title>
+  </head>
+  <body>
+    <h1>Math Object Operations</h1>
+
+    <script>
+      // Maths  Related Operations
+      //Math
+
+      //Area of circle
+      function area_of_circle(r) {
+        console.log(Math.PI);
+        let area = Math.PI * Math.pow(r, 2);
+        return area;
+      }
+
+      console.log(`Area of circle with radius 5 is ${area_of_circle(5)}`);
+
+      let a = -123;
+
+      console.log(Math.abs(a));
+
+      //random number
+
+      let ran = Math.random();
+      let three_digit_random_number = ran * 1000;
+      console.log(three_digit_random_number);
+
+      //discard decimal
+      console.log(Math.trunc(three_digit_random_number));
+
+      //square root
+      console.log(Math.sqrt(4));
+
+      //ceil
+      console.log(Math.ceil(3.2));
+
+      console.log(Math.floor(3.2));
+
+      console.log(Math.ceil(-3.2));
+
+      //   min and max
+      console.log(Math.min(30, 36, 2, 4, 6));
+
+      console.log(Math.sin(30 * (Math.PI / 180)));
+
+      //   sin , cos work in radian
+
+      console.log(Math);
+    </script>
+  </body>
+</html>

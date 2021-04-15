@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>String important functions</h1>
+    <script>
+      // javascript code
+      //string important functions
+      let s = "I love javascript";
+      console.log(s);
+      //1. length - number of characters
+      let len = s.length;
+      console.log("length ", len);
+
+      //   1. concat()
+      let s1 = "and java";
+      //   console.log(s + " " + s1);
+      let ans = s.concat(" ", s1);
+      console.log(ans);
+
+      //   2.charAt(x)
+      let ch = s.charAt(13);
+      console.log(ch);
+
+      //3. indexOf
+      let index = s.indexOf("a");
+      console.log(index);
+
+      //4. lastIndexOf
+      let index1 = s.lastIndexOf("a");
+      console.log(index1);
+
+      //5.toUpperCase
+      console.log(s.toUpperCase());
+
+      //6. toLowerCase
+      console.log(s.toLowerCase());
+
+      //   7.substring(start,end)
+      //   end is not included
+      let sub = s.substring(2, 6);
+      console.log(sub);
+
+      //   8.startsWith
+      console.log(s.startsWith("I love ja"));
+
+      //9. endsWith
+      console.log(s.endsWith("java"));
+
+      //10. split
+      let sp = s.split(" ");
+      console.log(typeof sp);
+      console.log(sp);
+      console.log(sp[0]);
+      console.log(sp[1]);
+      console.log(sp[2]);
+
+      //11.trim
+      let s2 = "         My content ";
+      let s3 = s2.trim();
+      console.log(s3);
+      console.log(s2);
+    </script>
+  </body>
+</html>

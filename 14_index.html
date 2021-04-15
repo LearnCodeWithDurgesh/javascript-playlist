@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Common Operations</title>
+  </head>
+  <body>
+    <h1>Javascript Common Array Operations</h1>
+    <script>
+      //array operations
+      //.Create
+      let names = ["John", "Peter", "Ram"];
+      console.log(names);
+      console.log(names.length);
+
+      //Array access using index
+      console.log(names[0]);
+      console.log(names[1]);
+
+      //Loop over an array
+      //forEach
+
+      names.forEach(function (item, index) {
+        //this is funtion body
+        console.log(index, " => ", item);
+      });
+
+      let nums = [22, 11, 99, 33];
+      let sum = 0;
+
+      nums.forEach(function (it, i) {
+        sum = sum + it;
+      });
+      console.log("sum ", sum);
+
+      console.log(names);
+      //Adding element at last
+      names.push("Shyam");
+      console.log(names);
+      names.push("Sita");
+      console.log(names);
+
+      //remove element from last
+      let r = names.pop();
+      console.log(r);
+      console.log(names);
+      console.log(names.pop());
+      console.log(names);
+
+      //remove element from beginning
+      let r1 = names.shift();
+      console.log(r1);
+      console.log(names);
+
+      //add element at front end
+      let r2 = names.unshift("Karan");
+      console.log(r2);
+      console.log(names);
+
+      let pos = names.indexOf("Peter");
+      console.log(pos);
+
+      //remove the element from any position
+      //using splice
+      //splice(pos,n)
+      console.log(names.splice(1, 2));
+      console.log(names);
+
+      //copy and array
+      //slice
+      let copy = names.slice();
+      //shallowCopy
+      console.log(copy);
+      console.log(names);
+
+      //-------------------------
+      //let arr
+      //arr.length()
+
+      //arr.length
+      //string.length
+      console.log(names.length);
+      let st = "hello dont do these mistake";
+      console.log(st.length);
+
+      //names[0]
+      console.log(names[0]);
+      //   console.log(names.0)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Type Conversion in JS</h1>
+    <script>
+      //type conversion example
+      let a = 12;
+      console.log(typeof a);
+
+      //String conversion
+      //   String
+      let as = String(a);
+
+      console.log(as);
+      console.log(typeof as);
+
+      console.log(as.length);
+      //   console.log(a.length);
+
+      console.log(a.toString());
+
+      console.log(String(false));
+
+      // Numeric Conversion
+      //Number
+      let value = "1224";
+
+      console.log(value + 5);
+
+      let value1 = Number(value);
+
+      console.log(value1 + 5);
+
+      let f1 = "34523.234";
+      let f2 = Number(f1);
+      console.log(f2);
+      console.log(typeof f2);
+
+      //parseInt
+      //parseFloat
+      let pint = parseInt(value);
+      console.log(pint);
+      console.log(typeof pint);
+
+      console.log(parseFloat(f1));
+      /*
+      undefined =>NaN
+      null =>0
+      true =>1
+      false =>0
+*/
+      console.log(Number(false));
+      console.log(Number(undefined));
+
+      //Boolean conversion
+      let ex = -30;
+      console.log(typeof ex);
+
+      let exb = Boolean(ex);
+      console.log(exb);
+      console.log(typeof exb);
+    </script>
+  </body>
+</html>

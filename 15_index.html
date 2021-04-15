@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>function</title>
+  </head>
+  <body>
+    <h1>Learning Functions in JS</h1>
+    <script>
+      //functions
+
+      //how to create a function
+      function pappu() {
+        //body open
+
+        //here we write task
+        console.log("Hello ,");
+        console.log("how are you?");
+        console.log("What are you doing?");
+      } //body close
+
+      //function with argu
+      //and return type
+      //formal parameters
+      function doSum(a, b) {
+        //sum of two number
+        let c = a + b;
+        return c;
+      }
+
+      console.log("First line");
+      console.log("Second line");
+      pappu();
+      console.log("mid of the code");
+      pappu();
+      //actual parameters
+      let s = doSum(12, 45);
+      console.log("sum is ", s);
+
+      //why?
+      //code reuse
+
+      //arrow-
+
+      const toCelsius = (fahrenheit) => {
+        let result = (5 / 9) * (fahrenheit - 32);
+        return result;
+      };
+
+      let c = toCelsius(102);
+      console.log(c);
+    </script>
+  </body>
+</html>

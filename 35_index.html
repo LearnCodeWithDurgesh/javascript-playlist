@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Time in Javascript</title>
+  </head>
+  <body>
+    <h1>Date Time Example in Javascript</h1>
+    <script>
+      //let start with date and time
+
+      //current datetime
+      let d = new Date();
+      console.log(d);
+      console.log(d.toLocaleDateString());
+      console.log(d.toLocaleTimeString());
+      console.log(d.toUTCString());
+      console.log(`Date ${d.getDate()}`);
+      console.log(`Month ${d.getMonth() + 1}`);
+      console.log(`Year ${d.getFullYear()}`);
+      console.log(`Day ${d.getDay() + 1}`);
+      console.log(`Hour ${d.getHours()}`);
+      console.log(`Minutes ${d.getMinutes()}`);
+
+      let d1 = new Date(2020, 0, 21);
+
+      console.log(d1);
+    </script>
+  </body>
+</html>
